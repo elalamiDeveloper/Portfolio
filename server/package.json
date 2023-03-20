@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "El Alami IDRISS Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EL ALAMI IDRISS",
+  "license": "ISC"
+}
