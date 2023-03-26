@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: #2d2e32;
 }
 
 a {
@@ -27,8 +28,19 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+  display: inline-block;
+}
+
 .container {
   margin: 0 auto;
   width: 85%;
   max-width: 128rem;
+}
+
+.padding-section {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }

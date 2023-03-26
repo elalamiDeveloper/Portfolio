@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import COLORS from '../../utils/constants/colors';
-import { BsLinkedin, BsGithub } from '../../utils/constants/icons';
-import { LINKEDIN_URL, GITHUB_URL } from '../../utils/constants/urls';
+
+import { SocialLinks } from '../../components';
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -16,18 +15,8 @@ const FooterContainer = styled.footer`
 
   .footer-icons {
     flex: 1;
-    display: flex;
+    font-size: 2.2rem;
     justify-content: flex-end;
-    align-items: center;
-    gap: 1.5rem;
-    font-size: 2rem;
-
-    .footer-icons__item {
-      &:hover {
-        color: ${COLORS.primaryColor};
-        transform: scale(1.2);
-      }
-    }
   }
 `;
 
@@ -37,15 +26,8 @@ const Footer = () => {
   return (
     <FooterContainer>
       <p className="footer-text">Copyright © {year}. All rights are reserved</p>
-      <div className="footer-icons">
-        <Link to={LINKEDIN_URL} className="footer-icons__item">
-          <BsLinkedin />
-        </Link>
 
-        <Link to={GITHUB_URL} className="footer-icons__item">
-          <BsGithub />
-        </Link>
-      </div>
+      <SocialLinks className="footer-icons" />
     </FooterContainer>
   );
 };
